@@ -18,14 +18,16 @@ const Lista = () => {
     ])
 
     function linha(){
-       return  meses.map((item, i)=>(
-        <li key={i}>{item}</li>
-    ))
-    }
+        return  meses.map((item, i)=>(
+            <option key={i}>{item}</option>
+            ))
+        }
 
   return (
     <div>
-        <ul>{linha()}</ul>   
+        <select name="" id="">
+        {linha()}  
+        </select>
     </div>
   )
 }
